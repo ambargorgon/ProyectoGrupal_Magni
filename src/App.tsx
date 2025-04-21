@@ -1,12 +1,12 @@
-import React from 'react';
 import './App.css'
-import List from "./components/List"
+import {BrowserRouter as Router} from "react-router-dom"
+import AppRoutes from './routes/AppRoutes'
 
 function App() {
   return (
-    <>
-      <List />
-    </>
+    <Router>
+      <AppRoutes/>
+    </Router> 
   )
 }
 
